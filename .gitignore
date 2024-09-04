@@ -22,3 +22,38 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+//I didn't know what code I should do so I used one of my projects
+
+/*
+  This Java code prints all prime numbers between 2 and 500. 
+  It uses nested loops to achieve this: the outer loop iterates through each number (num) from 2 to 500, 
+  while the inner loop checks if the current num is divisible by any number from 2 up to num/2. 
+  If num is divisible by any of these, it's not a prime number, so the inner loop breaks, and the number is skipped. 
+  If the number is not divisible by any of these, it is identified as prime, and the code prints it
+*/
+
+public class E2_3_1 
+{
+	public static void main(String[] args)
+	{
+		  int num , i , count ;
+	    System.out.println("the prime numbers between 2 and 500 r:") ;
+	    for(num = 2 ; num <= 500 ; num++)
+	    {
+	    	  count = 0 ;
+	        for(i = 2 ; i <= num/2 ; i++)
+	        {
+	        	if(num % i == 0)
+	          {
+	        		  count++ ;
+	              break ;
+	          }
+	        }
+	        if(count == 0 && num != 1) 
+	        {
+	        	System.out.println(num) ;
+	        }
+	    }
+	}
+}
