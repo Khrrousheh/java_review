@@ -7,7 +7,7 @@ public class Main
     public static void main(String[] args) 
     {
         //Palindrome word or not
-		String word = "madam" ;
+	String word = "madam" ;
         boolean isPalindrome = Manipulation.isPalindrome(word) ;
         if(isPalindrome == true)
         {
