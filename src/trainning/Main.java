@@ -75,7 +75,7 @@ public class Main
         } 
         catch (IllegalArgumentException e) 
         {
-            System.out.println(e.getMessage()) ;
+            System.out.println(e.getMessage()) ;  //Catch and print the error message if an IllegalArgumentException is thrown
         }
     }
 }
