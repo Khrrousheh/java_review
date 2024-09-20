@@ -119,7 +119,8 @@ public class StringExercises
         }
     }
 
-    public static String namingConventions(String str){
+    public static String namingConventions(String str)
+    {
         /*
          *
          * every programming languages have a name conventions
